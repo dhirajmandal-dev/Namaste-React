@@ -1,0 +1,128 @@
+
+
+Theory -
+
+● What is Emmet?
+=>Emmet is a toolkit built into many code editors that allows developers to
+ use short abbreviations to quickly generate HTML and CSS code, including boilerplate structures.
+
+
+● Difference between a Library and Framework?
+A library is a collection of reusable code that we can call whenever we need it to perform a particular task.
+The developer is in control of when and how the library is used.
+
+A framework provides the overall structure and foundation for an application.
+The framework controls the application's flow and calls our code at specific points.
+
+
+● What is CDN? Why do we use it?
+CDN stands for Content Delivery Network. It is a network of servers distributed across different geographical locations that delivers
+files or resources to users from a nearby server.
+
+In the case of React, we can use a CDN URL to load React directly into our HTML without installing it through a package manager like npm.
+
+
+● Why is React known as React?
+=> React is a JavaScript library for building user interfaces.
+It is called React because the UI reacts to changes in data, such as state and props, and updates accordingly.
+
+ 
+● What is crossorigin in script tag?
+crossorigin is an attribute on the script tag that tells the browser how to handle a cross-origin request for the script,
+including whether credentials should be sent with the request.
+
+
+● What is difference between React and ReactDOM
+React is the core library used to create and describe UI components and elements. 
+ReactDOM is a separate library that provides the integration between React and the browser DOM, allowing React elements to be rendered into the DOM.
+
+● What is difference between react.development.js and react.production.js files via CDN?
+The React development build is intended for development and includes additional warnings and checks that help developers debug their applications. 
+The production build is optimized and minified for better performance and smaller file size, so it is used when deploying the application to users.
+
+
+● What is async and defer? 
+async allows the script to execute as soon as it finishes downloading, so execution order isn't guaranteed.
+defer waits until HTML parsing is complete and maintains the order of deferred scripts.
+
+
+Coding -
+● Build your first Hello World program using,
+○ Using just HTML
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Namaste React</title>
+  </head>
+
+  <body>
+    <div id="root">
+      <h1>Hello World</h1>
+    </div>
+  </body>
+</html>
+
+○ Using JS to manipulate the DOM
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Namaste React</title>
+  </head>
+
+  <body>
+    <div id="root">
+      <script>
+        const heading = document.createElement("h1");
+
+        heading.innerHTML = "Hello World from JavaScript!!";
+
+        const root = document.getElementById("root");
+
+        root.appendChild(heading);
+      </script>
+    </div>
+  </body>
+</html>
+
+○ Using React
+■ use CDN Links
+■ Create an Element
+■ Create nested React Elements
+■ Use root.render
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Namaste React</title>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+
+    <script>
+      const heading = React.createElement("h1", {}, "Hello World from React!!");
+
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+
+      root.render(heading);
+    </script>
+  </body>
+</html>
