@@ -1,0 +1,2 @@
+export const IMAGE_URL = "https://static.apps.ristaapps.com/b/b646d853-c880-4b1f-a032-202f2710162a/images/68428f5710badf1a6227f1c2/original.jpg"
+export const LOGO_UR ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9KMq_H3wojpd9e7gv-HuFDOENo8slhPQjoiC2DpiIIw&s=10"

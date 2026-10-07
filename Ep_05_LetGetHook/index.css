@@ -1,0 +1,68 @@
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border: 1px solid red;
+}
+
+.logo-container {
+  width: 50px;
+}
+
+.logo-container img {
+  width: 100%;
+}
+
+.nav-container ul {
+  display: flex;
+  list-style: none;
+  font-weight: 600;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+.card {
+  padding: 5px;
+  width: 180px;
+  height: 300px;
+  background-color: rgb(174, 164, 164);
+  border-radius: 5px;
+}
+
+.card:hover {
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.card.res-img {
+  width: 200px;
+}
+
+.res-img img {
+  width: 100%;
+}
+
+.search-box {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 20px;
+  gap: 20px;
+}
+
+.input-box {
+  width: 500px;
+  height: 20px;
+}
+
+.search-btn:hover {
+  background-color: blue;
+  cursor: pointer;
+}
