@@ -1,0 +1,2 @@
+export const IMAGE_URL = "https://media-assets.swiggy.com/swiggy/image/upload/"
+export const LOGO_UR ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9KMq_H3wojpd9e7gv-HuFDOENo8slhPQjoiC2DpiIIw&s=10"
